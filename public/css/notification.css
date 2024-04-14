@@ -1,0 +1,315 @@
+.notifications {
+    margin: 20px;
+}
+
+.notification {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification .content {
+    flex-grow: 1;
+}
+
+.notification .close-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.notification .close-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.no-notification {
+    margin-top: 20px;
+}
+
+.custom-read-notifications-dropdown {
+    margin-top: 20px;
+}
+
+.custom-dropdown-header button {
+    background-color: #f9f9f9;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.custom-read-notifications-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.readed-notification {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
+}
+
+.foot-panel1 {
+    background-color: #374758;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    height: 210px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ul {
+    margin-top: 20px;
+}
+
+.ul a {
+    display: block;
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.foot-panel4 {
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.pages {
+    padding-top: 25px;
+    font-size: 15px;
+}
+
+.copy {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.pages a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+.notifications {
+    width: 70%;
+    margin: 20px auto;
+    margin-top: 5px;
+    margin-left: 180px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20%;
+}
+
+.read-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.readed-notification {
+    display: none;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: auto;
+    z-index: 1;
+    padding: 20px;
+    margin-right: 20%;
+}
+
+.custom-dropdown-header {
+    margin-top: 30px;
+}
+
+
+
+.notification {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 15px;
+    position: relative;
+    border-left: 5px solid #34495e;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    display: flex;
+}
+
+.notification:last-child {
+    margin-bottom: 0;
+}
+
+.notification .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.notification .content {
+    color: #555;
+    padding-left: 5px;
+}
+
+
+
+.close-icon {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .foot-panel2 {
+        height: 300px;
+    }
+}
+
+.ul {
+    margin-top: 20px;
+}
+
+.ul a {
+    display: block;
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.foot-panel4 {
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.pages {
+    padding-top: 25px;
+    font-size: 15px;
+}
+
+.copy {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.pages a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.notifications {
+    width: 70%;
+    margin: 20px auto;
+    margin-top: 5px;
+    margin-left: 180px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20%;
+}
+
+.read-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.readed-notification {
+    display: none;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-right: 20%;
+}
+
+.custom-dropdown-header {
+    margin-top: 30px;
+}
+
+.notification {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 15px;
+    position: relative;
+    border-left: 5px solid #34495e;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    display: flex;
+}
+
+.notification:last-child {
+    margin-bottom: 0;
+}
+
+.notification .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.notification .content {
+    color: #555;
+    padding-left: 5px;
+}
+
+.close-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Responsive styles for list items on smaller screens */
+@media screen and (max-width: 768px) {
+    li {
+        margin-right: 10px;
+    }
+}

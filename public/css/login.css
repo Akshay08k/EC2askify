@@ -1,0 +1,13 @@
+  /* CSS styles */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  body {
+    font-family: 'poppins', sans-serif;
+    background: url('/images/back.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
