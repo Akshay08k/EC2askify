@@ -10,6 +10,7 @@ body {
     font-family: var(--font-family);
     margin: 0;
     background-color: red;
+    background-position-x: center;
     padding: 0;
     background-color: #ecf0f1;
 }
