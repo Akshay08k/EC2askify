@@ -1,9 +1,0 @@
-CRITICAL - 2024-03-26 09:21:50 --> syntax error, unexpected token "endforeach", expecting end of file
-in APPPATH/Views/admin/manage_account.php on line 92.
- 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 2 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
- 3 APPPATH/Controllers/AdminController.php(56): view()
- 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\AdminController->AdminProfile()
- 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
- 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
- 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

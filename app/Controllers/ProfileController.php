@@ -109,7 +109,7 @@ class ProfileController extends BaseController
 
         $data['Question'] = $QuestionModel->where('user_id', $userId)->findAll();
         $data['Answer'] = $answerModel->where('user_id', $userId)->findAll();
-        $data['recentActivity'] = $activityLogModel->getRecentActivityForUser($userId, 5);
+    
         $data['error'] = session()->getFlashdata('error');
         return view('user/selfprofile', $data);
 
