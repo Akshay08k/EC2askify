@@ -109,7 +109,7 @@ class ProfileController extends BaseController
 
         $data['Question'] = $QuestionModel->where('user_id', $userId)->findAll();
         $data['Answer'] = $answerModel->where('user_id', $userId)->findAll();
-    
+
         $data['error'] = session()->getFlashdata('error');
         return view('user/selfprofile', $data);
 
@@ -203,7 +203,6 @@ class ProfileController extends BaseController
     public function processCategorySelection()
     {
         $usercategoryModel = new UserCategoriesModel();
-
         $selectedCategories = $this->request->getPost('selected_categories');
         print_r($selectedCategories);
         $userId = session()->get('user_id');
@@ -222,7 +221,7 @@ class ProfileController extends BaseController
         }
         $userModel = new UserModel();
         $userData = $userModel->find($userId);
-        if (empty ($userData)) {
+        if (empty($userData)) {
             return redirect()->to('/user/404page')->with('error', 'User not found.');
         }
         return view('user/updateprofile', ['userData' => $userData]);
@@ -239,7 +238,7 @@ class ProfileController extends BaseController
         $userModel = new UserModel();
         $userData = $userModel->find($userId);
 
-        if (empty ($userData)) {
+        if (empty($userData)) {
             return redirect()->to('/user/404page')->with('error', 'User not found.');
         }
 

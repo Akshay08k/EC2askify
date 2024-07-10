@@ -1,0 +1,501 @@
+ERROR - 2024-07-06 06:53:43 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('51.20.71.103', 'root', Object(SensitiveParameterValue), 'project', 3306, '', 0)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Askify-Codeigniter4\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Askify-Codeigniter4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 E:\Askify-Codeigniter4\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 E:\Askify-Codeigniter4\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\Askify-Codeigniter4\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\Askify-Codeigniter4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 E:\Askify-Codeigniter4\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#6 E:\Askify-Codeigniter4\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#7 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#12 {main}
+CRITICAL - 2024-07-06 06:53:43 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-07-06 06:54:02 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('51.20.71.103', 'root', Object(SensitiveParameterValue), 'project', 3306, '', 0)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Askify-Codeigniter4\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Askify-Codeigniter4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 E:\Askify-Codeigniter4\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 E:\Askify-Codeigniter4\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\Askify-Codeigniter4\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\Askify-Codeigniter4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 E:\Askify-Codeigniter4\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#6 E:\Askify-Codeigniter4\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#7 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#12 {main}
+CRITICAL - 2024-07-06 06:54:02 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-07-06 06:54:05 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('51.20.71.103', 'root', Object(SensitiveParameterValue), 'project', 3306, '', 0)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Askify-Codeigniter4\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Askify-Codeigniter4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 E:\Askify-Codeigniter4\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 E:\Askify-Codeigniter4\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\Askify-Codeigniter4\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\Askify-Codeigniter4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 E:\Askify-Codeigniter4\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#6 E:\Askify-Codeigniter4\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#7 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#12 {main}
+CRITICAL - 2024-07-06 06:54:05 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-07-06 06:55:52 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('51.20.71.103', 'root', Object(SensitiveParameterValue), 'project', 3306, '', 0)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Askify-Codeigniter4\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Askify-Codeigniter4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 E:\Askify-Codeigniter4\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 E:\Askify-Codeigniter4\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\Askify-Codeigniter4\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\Askify-Codeigniter4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 E:\Askify-Codeigniter4\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#6 E:\Askify-Codeigniter4\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#7 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#12 {main}
+CRITICAL - 2024-07-06 06:55:52 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-07-06 06:56:22 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('51.20.71.103', 'root', Object(SensitiveParameterValue), 'project', 3306, '', 0)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Askify-Codeigniter4\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Askify-Codeigniter4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 E:\Askify-Codeigniter4\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 E:\Askify-Codeigniter4\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\Askify-Codeigniter4\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\Askify-Codeigniter4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 E:\Askify-Codeigniter4\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#6 E:\Askify-Codeigniter4\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#7 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#12 {main}
+CRITICAL - 2024-07-06 06:56:22 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-07-06 06:56:58 --> mysqli_sql_exception: Table 'project.visitors' doesn't exist in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Askify-Codeigniter4\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Askify-Codeigniter4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 E:\Askify-Codeigniter4\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 E:\Askify-Codeigniter4\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#13 {main}
+CRITICAL - 2024-07-06 06:56:58 --> Table 'project.visitors' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-07-06 06:56:59 --> mysqli_sql_exception: Table 'project.visitors' doesn't exist in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Askify-Codeigniter4\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Askify-Codeigniter4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 E:\Askify-Codeigniter4\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 E:\Askify-Codeigniter4\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#13 {main}
+CRITICAL - 2024-07-06 06:56:59 --> Table 'project.visitors' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-07-06 06:56:59 --> mysqli_sql_exception: Table 'project.visitors' doesn't exist in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Askify-Codeigniter4\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Askify-Codeigniter4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 E:\Askify-Codeigniter4\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 E:\Askify-Codeigniter4\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#13 {main}
+CRITICAL - 2024-07-06 06:56:59 --> Table 'project.visitors' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-07-06 06:56:59 --> mysqli_sql_exception: Table 'project.visitors' doesn't exist in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Askify-Codeigniter4\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Askify-Codeigniter4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 E:\Askify-Codeigniter4\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 E:\Askify-Codeigniter4\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#13 {main}
+CRITICAL - 2024-07-06 06:56:59 --> Table 'project.visitors' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-07-06 06:57:00 --> mysqli_sql_exception: Table 'project.visitors' doesn't exist in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Askify-Codeigniter4\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Askify-Codeigniter4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 E:\Askify-Codeigniter4\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 E:\Askify-Codeigniter4\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#13 {main}
+CRITICAL - 2024-07-06 06:57:00 --> Table 'project.visitors' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-07-06 06:57:00 --> mysqli_sql_exception: Table 'project.visitors' doesn't exist in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Askify-Codeigniter4\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Askify-Codeigniter4\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 E:\Askify-Codeigniter4\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 E:\Askify-Codeigniter4\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#13 {main}
+CRITICAL - 2024-07-06 06:57:00 --> Table 'project.visitors' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on lin 45.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-07-06 06:58:29 --> mysqli_sql_exception: Table 'project.users' doesn't exist in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 E:\Askify-Codeigniter4\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Askify-Codeigniter4\system\Validation\StrictRules\Rules.php(154): CodeIgniter\Validation\Rules->is_unique('akshaykomade012...', 'email', Array)
+#6 E:\Askify-Codeigniter4\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('akshaykomade012...', 'users.email', Array, NULL, 'email')
+#7 E:\Askify-Codeigniter4\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'akshaykomade012...', Array, Array)
+#8 E:\Askify-Codeigniter4\app\Controllers\Register.php(26): CodeIgniter\Validation\Validation->run()
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\Register->save()
+#10 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#14 {main}
+CRITICAL - 2024-07-06 06:58:29 --> Table 'project.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(154): CodeIgniter\Validation\Rules->is_unique('akshaykomade012345@gmail.com', 'email', [...])
+ 4 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('akshaykomade012345@gmail.com', 'users.email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'akshaykomade012345@gmail.com', [...], [...])
+ 6 APPPATH\Controllers\Register.php(26): CodeIgniter\Validation\Validation->run()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->save()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2024-07-06 07:00:13 --> Undefined array key "first_login"
+in APPPATH\Controllers\Login.php on line 41.
+ 1 APPPATH\Controllers\Login.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "first_login"', 'APPPATH\\Controllers\\Login.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-07-06 07:01:29 --> mysqli_sql_exception: Table 'project.user_categories' doesn't exist in E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\Askify-Codeigniter4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `us...', 0)
+#1 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 E:\Askify-Codeigniter4\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 E:\Askify-Codeigniter4\system\Database\BaseBuilder.php(2776): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 E:\Askify-Codeigniter4\system\Model.php(454): CodeIgniter\Database\BaseBuilder->delete()
+#5 E:\Askify-Codeigniter4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(NULL, false)
+#6 E:\Askify-Codeigniter4\app\Models\UserCategoriesModel.php(15): CodeIgniter\BaseModel->delete()
+#7 E:\Askify-Codeigniter4\app\Controllers\ProfileController.php(210): App\Models\UserCategoriesModel->storeUserCategories('0', Array)
+#8 E:\Askify-Codeigniter4\system\CodeIgniter.php(934): App\Controllers\ProfileController->processCategorySelection()
+#9 E:\Askify-Codeigniter4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+#10 E:\Askify-Codeigniter4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\Askify-Codeigniter4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\Askify-Codeigniter4\system\Commands\Server\rewrite.php(47): require_once('E:\\Askify-Codei...')
+#13 {main}
+CRITICAL - 2024-07-06 07:01:29 --> Table 'project.user_categories' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2776): CodeIgniter\Database\BaseConnection->query('DELETE FROM `user_categories`
+WHERE `user_id` = :user_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(454): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete(null, false)
+ 4 APPPATH\Models\UserCategoriesModel.php(15): CodeIgniter\BaseModel->delete()
+ 5 APPPATH\Controllers\ProfileController.php(210): App\Models\UserCategoriesModel->storeUserCategories('0', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProfileController->processCategorySelection()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
