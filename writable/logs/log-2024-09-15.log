@@ -1,0 +1,1785 @@
+ERROR - 2024-09-15 06:46:31 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'p1' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'p1', 3306, '', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'p1' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\Users\akshay\Downloads\Askify\Askify\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 06:46:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'p1'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:46:40 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'p1' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'p1', 3306, '', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'p1' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\Users\akshay\Downloads\Askify\Askify\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 06:46:40 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'p1'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:46:57 --> mysqli_sql_exception: Table 'project.visitors' doesn't exist in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#13 {main}
+CRITICAL - 2024-09-15 06:46:57 --> Table 'project.visitors' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:46:58 --> mysqli_sql_exception: Table 'project.visitors' doesn't exist in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#13 {main}
+CRITICAL - 2024-09-15 06:46:58 --> Table 'project.visitors' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:46:58 --> mysqli_sql_exception: Table 'project.visitors' doesn't exist in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#13 {main}
+CRITICAL - 2024-09-15 06:46:58 --> Table 'project.visitors' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:47:02 --> mysqli_sql_exception: Table 'project.visitors' doesn't exist in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#13 {main}
+CRITICAL - 2024-09-15 06:47:02 --> Table 'project.visitors' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:47:03 --> mysqli_sql_exception: Table 'project.visitors' doesn't exist in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#13 {main}
+CRITICAL - 2024-09-15 06:47:03 --> Table 'project.visitors' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:47:03 --> mysqli_sql_exception: Table 'project.visitors' doesn't exist in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#13 {main}
+CRITICAL - 2024-09-15 06:47:03 --> Table 'project.visitors' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `visitors`
+WHERE `ip_address` = :ip_address:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\VisitorModel.php(16): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Home.php(12): App\Models\VisitorModel->trackVisitor('::1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2024-09-15 06:50:17 --> Undefined array key "first_login"
+in APPPATH\Controllers\Login.php on line 37.
+ 1 APPPATH\Controllers\Login.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "first_login"', 'APPPATH\\Controllers\\Login.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2024-09-15 06:51:38 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(754): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Login.php(39): CodeIgniter\Model->update('72', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2024-09-15 06:51:39 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(754): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Login.php(39): CodeIgniter\Model->update('72', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:52:57 --> mysqli_sql_exception: Table 'project.user_categories' doesn't exist in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `us...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(2776): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(454): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(NULL, false)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Models\UserCategoriesModel.php(15): CodeIgniter\BaseModel->delete()
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\ProfileController.php(210): App\Models\UserCategoriesModel->storeUserCategories('72', Array)
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\ProfileController->processCategorySelection()
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#13 {main}
+CRITICAL - 2024-09-15 06:52:57 --> Table 'project.user_categories' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2776): CodeIgniter\Database\BaseConnection->query('DELETE FROM `user_categories`
+WHERE `user_id` = :user_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(454): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete(null, false)
+ 4 APPPATH\Models\UserCategoriesModel.php(15): CodeIgniter\BaseModel->delete()
+ 5 APPPATH\Controllers\ProfileController.php(210): App\Models\UserCategoriesModel->storeUserCategories('72', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProfileController->processCategorySelection()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:53:50 --> mysqli_sql_exception: Unknown column 'category_id' in 'field list' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(728): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Models\UserCategoriesModel.php(23): CodeIgniter\Model->insert(Array)
+#8 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\ProfileController.php(210): App\Models\UserCategoriesModel->storeUserCategories('72', Array)
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\ProfileController->processCategorySelection()
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#14 {main}
+CRITICAL - 2024-09-15 06:53:50 --> Unknown column 'category_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_categories` (`user_id`, `category_id`) VALUES (:user_id.1:, :category_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(728): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\UserCategoriesModel.php(23): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\ProfileController.php(210): App\Models\UserCategoriesModel->storeUserCategories('72', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProfileController->processCategorySelection()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:53:52 --> mysqli_sql_exception: Unknown column 'category_id' in 'field list' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(728): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Models\UserCategoriesModel.php(23): CodeIgniter\Model->insert(Array)
+#8 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\ProfileController.php(210): App\Models\UserCategoriesModel->storeUserCategories('72', Array)
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\ProfileController->processCategorySelection()
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#14 {main}
+CRITICAL - 2024-09-15 06:53:52 --> Unknown column 'category_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_categories` (`user_id`, `category_id`) VALUES (:user_id.1:, :category_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(728): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\UserCategoriesModel.php(23): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\ProfileController.php(210): App\Models\UserCategoriesModel->storeUserCategories('72', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProfileController->processCategorySelection()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:53:52 --> mysqli_sql_exception: Unknown column 'category_id' in 'field list' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(728): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Models\UserCategoriesModel.php(23): CodeIgniter\Model->insert(Array)
+#8 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\ProfileController.php(210): App\Models\UserCategoriesModel->storeUserCategories('72', Array)
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\ProfileController->processCategorySelection()
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#14 {main}
+CRITICAL - 2024-09-15 06:53:52 --> Unknown column 'category_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_categories` (`user_id`, `category_id`) VALUES (:user_id.1:, :category_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(728): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\UserCategoriesModel.php(23): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\ProfileController.php(210): App\Models\UserCategoriesModel->storeUserCategories('72', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProfileController->processCategorySelection()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:53:53 --> mysqli_sql_exception: Unknown column 'category_id' in 'field list' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(728): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Models\UserCategoriesModel.php(23): CodeIgniter\Model->insert(Array)
+#8 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\ProfileController.php(210): App\Models\UserCategoriesModel->storeUserCategories('72', Array)
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\ProfileController->processCategorySelection()
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#14 {main}
+CRITICAL - 2024-09-15 06:53:53 --> Unknown column 'category_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_categories` (`user_id`, `category_id`) VALUES (:user_id.1:, :category_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(728): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\UserCategoriesModel.php(23): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\ProfileController.php(210): App\Models\UserCategoriesModel->storeUserCategories('72', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProfileController->processCategorySelection()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:54:46 --> mysqli_sql_exception: Unknown column 'question.Hidden' in 'field list' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `users`....', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`....')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`....')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\HomepageController.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\HomepageController->getQuestions()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomepageController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 06:54:46 --> Unknown column 'question.Hidden' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`name`, `question`.`id`, `question`.`title`, `question`.`Hidden`, `question`.`description`, `question`.`category_id`, `question`.`user_id`, `question`.`likes`, `question`.`media`
+FROM `question`
+JOIN `users` ON `question`.`user_id` = `users`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\HomepageController.php(41): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomepageController->getQuestions()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomepageController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:55:09 --> mysqli_sql_exception: Unknown column 'question.Hidden' in 'field list' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `users`....', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`....')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`....')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\HomepageController.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\HomepageController->getQuestions()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomepageController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 06:55:09 --> Unknown column 'question.Hidden' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`name`, `question`.`id`, `question`.`title`, `question`.`Hidden`, `question`.`description`, `question`.`category_id`, `question`.`user_id`, `question`.`likes`, `question`.`media`
+FROM `question`
+JOIN `users` ON `question`.`user_id` = `users`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\HomepageController.php(41): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomepageController->getQuestions()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomepageController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:55:19 --> mysqli_sql_exception: Unknown column 'question.Hidden' in 'field list' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `users`....', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`....')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`....')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\HomepageController.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\HomepageController->getQuestions()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomepageController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 06:55:19 --> Unknown column 'question.Hidden' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`name`, `question`.`id`, `question`.`title`, `question`.`Hidden`, `question`.`description`, `question`.`category_id`, `question`.`user_id`, `question`.`likes`, `question`.`media`
+FROM `question`
+JOIN `users` ON `question`.`user_id` = `users`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\HomepageController.php(41): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomepageController->getQuestions()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomepageController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:55:23 --> mysqli_sql_exception: Unknown column 'question.Hidden' in 'field list' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `users`....', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`....')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`....')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\HomepageController.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\HomepageController->getQuestions()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomepageController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 06:55:23 --> Unknown column 'question.Hidden' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`name`, `question`.`id`, `question`.`title`, `question`.`Hidden`, `question`.`description`, `question`.`category_id`, `question`.`user_id`, `question`.`likes`, `question`.`media`
+FROM `question`
+JOIN `users` ON `question`.`user_id` = `users`.`id`', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\HomepageController.php(41): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\HomepageController->getQuestions()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomepageController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 06:56:05 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 06:56:49 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 06:57:04 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 06:57:05 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 06:57:49 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 06:57:50 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 07:00:51 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 07:00:51 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 07:00:52 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 07:00:52 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 07:00:53 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 07:00:53 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 07:00:53 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 07:01:39 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 07:03:02 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 07:03:03 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 07:03:04 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 07:03:04 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 07:03:05 --> Error fetching questions: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2024-09-15 07:04:41 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project`.`reports`, CONSTRAINT `reports_FK_3` FOREIGN KEY (`answer_id`) REFERENCES `answer` (`id`)) in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(728): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\ReportController.php(27): CodeIgniter\Model->insert(Array)
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\ReportController->reportQuestion('89')
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#13 {main}
+CRITICAL - 2024-09-15 07:04:41 --> Cannot add or update a child row: a foreign key constraint fails (`project`.`reports`, CONSTRAINT `reports_FK_3` FOREIGN KEY (`answer_id`) REFERENCES `answer` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reports` (`from_user`, `question_id`, `message`) VALUES (:from_user:, :question_id:, :message:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(728): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ReportController.php(27): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->reportQuestion('89')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:04:42 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project`.`reports`, CONSTRAINT `reports_FK_3` FOREIGN KEY (`answer_id`) REFERENCES `answer` (`id`)) in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(728): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\ReportController.php(27): CodeIgniter\Model->insert(Array)
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\ReportController->reportQuestion('89')
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#13 {main}
+CRITICAL - 2024-09-15 07:04:42 --> Cannot add or update a child row: a foreign key constraint fails (`project`.`reports`, CONSTRAINT `reports_FK_3` FOREIGN KEY (`answer_id`) REFERENCES `answer` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reports` (`from_user`, `question_id`, `message`) VALUES (:from_user:, :question_id:, :message:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(728): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ReportController.php(27): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->reportQuestion('89')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:04:42 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project`.`reports`, CONSTRAINT `reports_FK_3` FOREIGN KEY (`answer_id`) REFERENCES `answer` (`id`)) in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(728): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\ReportController.php(27): CodeIgniter\Model->insert(Array)
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\ReportController->reportQuestion('89')
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#13 {main}
+CRITICAL - 2024-09-15 07:04:42 --> Cannot add or update a child row: a foreign key constraint fails (`project`.`reports`, CONSTRAINT `reports_FK_3` FOREIGN KEY (`answer_id`) REFERENCES `answer` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reports` (`from_user`, `question_id`, `message`) VALUES (:from_user:, :question_id:, :message:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(728): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ReportController.php(27): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->reportQuestion('89')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:04:43 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project`.`reports`, CONSTRAINT `reports_FK_3` FOREIGN KEY (`answer_id`) REFERENCES `answer` (`id`)) in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(728): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\ReportController.php(27): CodeIgniter\Model->insert(Array)
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\ReportController->reportQuestion('89')
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#13 {main}
+CRITICAL - 2024-09-15 07:04:43 --> Cannot add or update a child row: a foreign key constraint fails (`project`.`reports`, CONSTRAINT `reports_FK_3` FOREIGN KEY (`answer_id`) REFERENCES `answer` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reports` (`from_user`, `question_id`, `message`) VALUES (:from_user:, :question_id:, :message:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(728): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ReportController.php(27): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->reportQuestion('89')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:04:43 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`project`.`reports`, CONSTRAINT `reports_FK_3` FOREIGN KEY (`answer_id`) REFERENCES `answer` (`id`)) in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(728): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\ReportController.php(27): CodeIgniter\Model->insert(Array)
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\ReportController->reportQuestion('89')
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#13 {main}
+CRITICAL - 2024-09-15 07:04:43 --> Cannot add or update a child row: a foreign key constraint fails (`project`.`reports`, CONSTRAINT `reports_FK_3` FOREIGN KEY (`answer_id`) REFERENCES `answer` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reports` (`from_user`, `question_id`, `message`) VALUES (:from_user:, :question_id:, :message:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(728): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ReportController.php(27): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ReportController->reportQuestion('89')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:05:06 --> mysqli_sql_exception: Unknown column 'recipient_id' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:05:06 --> Unknown column 'recipient_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `recipient_id` = :recipient_id:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:06:08 --> mysqli_sql_exception: Unknown column 'Receipeint' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:06:08 --> Unknown column 'Receipeint' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Receipeint` = :Receipeint:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:06:08 --> mysqli_sql_exception: Unknown column 'Receipeint' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:06:08 --> Unknown column 'Receipeint' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Receipeint` = :Receipeint:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:06:09 --> mysqli_sql_exception: Unknown column 'Receipeint' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:06:09 --> Unknown column 'Receipeint' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Receipeint` = :Receipeint:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:06:28 --> mysqli_sql_exception: Unknown column 'Receipeint' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:06:28 --> Unknown column 'Receipeint' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Receipeint` = :Receipeint:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:06:29 --> mysqli_sql_exception: Unknown column 'Receipeint' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:06:29 --> Unknown column 'Receipeint' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Receipeint` = :Receipeint:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:06:29 --> mysqli_sql_exception: Unknown column 'Receipeint' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:06:29 --> Unknown column 'Receipeint' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Receipeint` = :Receipeint:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:06:48 --> mysqli_sql_exception: Unknown column 'Recepeint' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:06:48 --> Unknown column 'Recepeint' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Recepeint` = :Recepeint:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:06:48 --> mysqli_sql_exception: Unknown column 'Recepeint' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:06:48 --> Unknown column 'Recepeint' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Recepeint` = :Recepeint:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:06:49 --> mysqli_sql_exception: Unknown column 'Recepeint' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:06:49 --> Unknown column 'Recepeint' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Recepeint` = :Recepeint:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:07:37 --> mysqli_sql_exception: Unknown column 'Recepeint' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:07:37 --> Unknown column 'Recepeint' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Recepeint` = :Recepeint:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:07:38 --> mysqli_sql_exception: Unknown column 'Recepeint' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:07:38 --> Unknown column 'Recepeint' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Recepeint` = :Recepeint:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:07:38 --> mysqli_sql_exception: Unknown column 'Recepeint' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:07:38 --> Unknown column 'Recepeint' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Recepeint` = :Recepeint:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:08:42 --> mysqli_sql_exception: Unknown column 'Rececpient' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:08:42 --> Unknown column 'Rececpient' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Rececpient` = :Rececpient:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:08:42 --> mysqli_sql_exception: Unknown column 'Rececpient' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:08:42 --> Unknown column 'Rececpient' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Rececpient` = :Rececpient:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:08:43 --> mysqli_sql_exception: Unknown column 'Rececpient' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:08:43 --> Unknown column 'Rececpient' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Rececpient` = :Rececpient:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:08:43 --> mysqli_sql_exception: Unknown column 'Rececpient' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:08:43 --> Unknown column 'Rececpient' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Rececpient` = :Rececpient:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:10:22 --> mysqli_sql_exception: Unknown column 'Rececpient' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:10:22 --> Unknown column 'Rececpient' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Rececpient` = :Rececpient:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:10:22 --> mysqli_sql_exception: Unknown column 'Rececpient' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:10:22 --> Unknown column 'Rececpient' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Rececpient` = :Rececpient:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:10:23 --> mysqli_sql_exception: Unknown column 'Rececpient' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:10:23 --> Unknown column 'Rececpient' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Rececpient` = :Rececpient:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:10:58 --> mysqli_sql_exception: Unknown column 'Rececpient' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:10:58 --> Unknown column 'Rececpient' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `Rececpient` = :Rececpient:
+AND `seen` = :seen:', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:11:21 --> mysqli_sql_exception: Unknown column 'is_platform_update' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:11:21 --> Unknown column 'is_platform_update' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `is_platform_update` = :is_platform_update:
+ORDER BY `created_at` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:11:21 --> mysqli_sql_exception: Unknown column 'is_platform_update' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:11:21 --> Unknown column 'is_platform_update' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `is_platform_update` = :is_platform_update:
+ORDER BY `created_at` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:11:34 --> mysqli_sql_exception: Unknown column 'is_platform_update' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:11:34 --> Unknown column 'is_platform_update' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `is_platform_update` = :is_platform_update:
+ORDER BY `created_at` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:11:35 --> mysqli_sql_exception: Unknown column 'is_platform_update' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:11:35 --> Unknown column 'is_platform_update' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `is_platform_update` = :is_platform_update:
+ORDER BY `created_at` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:11:35 --> mysqli_sql_exception: Unknown column 'is_platform_update' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:11:35 --> Unknown column 'is_platform_update' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `is_platform_update` = :is_platform_update:
+ORDER BY `created_at` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:11:45 --> mysqli_sql_exception: Unknown column 'is_platform_update' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:11:45 --> Unknown column 'is_platform_update' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `is_platform_update` = :is_platform_update:
+ORDER BY `created_at` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:11:46 --> mysqli_sql_exception: Unknown column 'is_platform_update' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:11:46 --> Unknown column 'is_platform_update' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `is_platform_update` = :is_platform_update:
+ORDER BY `created_at` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:11:46 --> mysqli_sql_exception: Unknown column 'is_platform_update' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:11:46 --> Unknown column 'is_platform_update' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `is_platform_update` = :is_platform_update:
+ORDER BY `created_at` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:12:17 --> mysqli_sql_exception: Unknown column 'created_at' in 'order clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:12:17 --> Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `is_platform_update` = :is_platform_update:
+ORDER BY `created_at` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:12:17 --> mysqli_sql_exception: Unknown column 'created_at' in 'order clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:12:17 --> Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `is_platform_update` = :is_platform_update:
+ORDER BY `created_at` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:12:18 --> mysqli_sql_exception: Unknown column 'created_at' in 'order clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akshay\Downloads\Askify\Askify\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:12:18 --> Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `notifications`
+WHERE `is_platform_update` = :is_platform_update:
+ORDER BY `created_at` ASC', [...], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\NotificationController.php(33): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NotificationController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NotificationController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:13:46 --> mysqli_sql_exception: Table 'project.visitors' doesn't exist in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1630): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(838): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\AdminDashboardController.php(39): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\AdminDashboardController->index()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminDashboardController))
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#11 {main}
+CRITICAL - 2024-09-15 07:13:46 --> Table 'project.visitors' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1630): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `visitors`', null, false)
+ 2 SYSTEMPATH\Model.php(838): CodeIgniter\Database\BaseBuilder->countAll()
+ 3 APPPATH\Controllers\AdminDashboardController.php(39): CodeIgniter\Model->__call('countAll', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminDashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminDashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:15:14 --> mysqli_sql_exception: Table 'project.visitors' doesn't exist in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1630): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(838): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\AdminDashboardController.php(39): CodeIgniter\Model->__call('countAll', Array)
+#6 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\AdminDashboardController->index()
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminDashboardController))
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#11 {main}
+CRITICAL - 2024-09-15 07:15:14 --> Table 'project.visitors' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1630): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `visitors`', null, false)
+ 2 SYSTEMPATH\Model.php(838): CodeIgniter\Database\BaseBuilder->countAll()
+ 3 APPPATH\Controllers\AdminDashboardController.php(39): CodeIgniter\Model->__call('countAll', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminDashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminDashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2024-09-15 07:15:45 --> Undefined variable $totalVisitor
+in APPPATH\Views\admin\dashboard.php on line 62.
+ 1 APPPATH\Views\admin\dashboard.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalVisitor', 'APPPATH\\Views\\admin\\dashboard.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminDashboardController.php(52): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminDashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2024-09-15 07:15:45 --> Undefined variable $totalVisitor
+in APPPATH\Views\admin\dashboard.php on line 62.
+ 1 APPPATH\Views\admin\dashboard.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalVisitor', 'APPPATH\\Views\\admin\\dashboard.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminDashboardController.php(52): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminDashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2024-09-15 07:15:45 --> Undefined variable $totalVisitor
+in APPPATH\Views\admin\dashboard.php on line 62.
+ 1 APPPATH\Views\admin\dashboard.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalVisitor', 'APPPATH\\Views\\admin\\dashboard.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminDashboardController.php(52): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminDashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2024-09-15 07:15:46 --> Undefined variable $totalVisitor
+in APPPATH\Views\admin\dashboard.php on line 62.
+ 1 APPPATH\Views\admin\dashboard.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalVisitor', 'APPPATH\\Views\\admin\\dashboard.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminDashboardController.php(52): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminDashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminDashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2024-09-15 07:17:23 --> mysqli_sql_exception: Unknown column 'Hidden' in 'where clause' in C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\akshay\Downloads\Askify\Askify\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Users\akshay\Downloads\Askify\Askify\system\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\akshay\Downloads\Askify\Askify\system\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\Users\akshay\Downloads\Askify\Askify\app\Models\QuestionModel.php(72): CodeIgniter\Model->countAllResults()
+#6 C:\Users\akshay\Downloads\Askify\Askify\app\Controllers\AdminContentModController.php(42): App\Models\QuestionModel->isQuestionStatusUpdated(87)
+#7 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(934): App\Controllers\AdminContentModController->updateQuestionStatus()
+#8 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminContentModController))
+#9 C:\Users\akshay\Downloads\Askify\Askify\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\akshay\Downloads\Askify\Askify\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akshay\Downloads\Askify\Askify\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\akshay...')
+#12 {main}
+CRITICAL - 2024-09-15 07:17:23 --> Unknown column 'Hidden' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `question`
+WHERE `id` = :id:
+AND `Hidden` = :Hidden:', [...], false)
+ 2 SYSTEMPATH\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Models\QuestionModel.php(72): CodeIgniter\Model->countAllResults()
+ 4 APPPATH\Controllers\AdminContentModController.php(42): App\Models\QuestionModel->isQuestionStatusUpdated(87)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AdminContentModController->updateQuestionStatus()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminContentModController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
